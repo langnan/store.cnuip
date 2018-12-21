@@ -1,0 +1,203 @@
+.topSearch {
+  width: 1200px;
+  background-color: #fff;
+  padding: 30px 0 30px 40px;
+}
+
+.list {
+  width: 1200px;
+  // min-height: 500px;
+  background-color: #fff;
+  margin-top: 9px;
+  padding: 30px 40px 30px 40px;
+}
+
+.clearfix {
+  zoom: 1;
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+  }
+}
+
+.processList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .item {
+    + .item {
+      margin-left: 50px;
+      position: relative;
+      &:before {
+        content: '';
+        width: 27px;
+        height: 7px;
+        background: url('/assets/images/proposal/arrow.png') no-repeat top center;
+        position: absolute;
+        left: -36px;
+        top: 50%;
+        margin-top: -3px;
+      }
+    }
+    .userDiv {
+      width: 120px;
+      height: 38px;
+      border: 1px solid #3b77e3;
+      line-height: 38px;
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center;
+      color: #333;
+      position: relative;
+      .icons {
+        color: #3b77e3;
+        position: absolute;
+        right: 7px;
+        top: 50%;
+        margin-top: -6px;
+        font-size: 12px;
+      }
+      padding-right: 26px;
+      + .userDiv {
+        border-radius: 0;
+        border-top: none;
+      }
+      &:nth-child(1) {
+        border-radius: 4px 4px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 4px 4px;
+      }
+      &.singleUserDiv {
+        border-radius: 4px;
+      }
+    }
+    &.start,
+    &.end {
+      .userDiv {
+        width: 70px;
+        border-radius: 4px;
+        text-align: center;
+        padding-right: 0;
+      }
+    }
+    &.end {
+      position: relative;
+      &:after {
+        content: '抄送';
+        font-size: 12px;
+        position: absolute;
+        right: -38px;
+        top: -2px;
+      }
+    }
+    &.normal {
+      .userDiv {
+        padding-right: 0;
+      }
+    }
+    &.single {
+      .userDiv {
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.btn {
+  padding-top: 40px;
+}
+
+@uploader-width : 60px;
+@uploader-height : @uploader-width;
+@uploader-border-radius : @uploader-width/2;
+.main {
+  padding: 70px 180px 40px;
+  background-color: #fff;
+  :global {
+    .ant-upload-list-picture-card {
+      .ant-upload-list-item {
+        width: @uploader-width;
+        height: @uploader-height;
+        border-radius: @uploader-border-radius;
+        padding: 0;
+      }
+      .ant-upload-list-item-info {
+        border-radius: @uploader-border-radius;
+      }
+    }
+    .ant-upload {
+      &.ant-upload-select-picture-card {
+        width: @uploader-width;
+        height: @uploader-height;
+        border-radius: @uploader-border-radius;
+      }
+      .ant-upload-select-picture-card > .ant-upload {
+        padding: 0;
+      }
+    }
+    .ant-input {
+      width: 250px;
+      height: 40px;
+      background-color: #f3f3fb;
+      border-radius: 4px;
+      border: solid 1px #e1e1e1;
+    }
+  }
+  .textArea {
+    width: 100%;
+    min-height: 100px !important;
+  }
+}
+
+.itemTitle {
+  text-align: right;
+  font-weight: bold;
+}
+
+.loader {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.renderLabels {
+  width: 163px;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  background-color: #f3f3fb;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  position: relative;
+  a {
+    color: #96a2b1;
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+}
+
+.textOverflow {
+  text-overflow: ellipsis;
+  word-break: break-all;
+  max-width: 200px;
+  max-height: 46px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  //white-space: nowrap;
+  //height: 60px;
+}

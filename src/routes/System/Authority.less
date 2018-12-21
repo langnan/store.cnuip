@@ -1,0 +1,64 @@
+.buttonStyle {
+  width: 110px;
+  height: 40px;
+  float: left;
+  border-radius: 4px;
+}
+
+.level {
+  margin-bottom: 20px;
+  position: relative;
+  a {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &:hover {
+    > a {
+      display: block;
+    }
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.p {
+  border-bottom: 1px solid #ddd;
+}
+
+.aItem {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.item {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f3f3fb;
+}
+
+.checkBox {
+  top: 8px;
+  span {
+    top: 0.41em;
+    float: right;
+    + span {
+      float: left;
+    }
+  }
+}
+
+.line {
+  height: 1px;
+  background-color: #ddd;
+  margin-top: 50px;
+}

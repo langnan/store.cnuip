@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.loader {
+  margin: 200px auto 0;
+  display: block;
+}
+
+.main {
+  background-color: #fff;
+  padding: 32px;
+  color: #666;
+  :global {
+    .ant-tabs-tab {
+      z-index: 100;
+      margin: 0 2px 0 0;
+      padding: 12px 40px;
+      background-color: #f3f3fb;
+    }
+    .ant-tabs-tab-active {
+      border-bottom: none;
+      background-color: @primary-color;
+      color: #fff;
+    }
+    .ant-tabs-ink-bar {
+      height: 45px;
+    }
+    .ant-tabs {
+      z-index: 0;
+    }
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.status {
+  background-color: @primary-color;
+  color: #fff;
+  padding: 4px 6px;
+  font-size: 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.basicInfoRow {
+  line-height: 24px;
+}
+
+.spliter {
+  height: 2px;
+  background-color: #f0f2f5;
+  margin: 24px 0;
+}
+
+.paraDeco {
+  display: inline-block;
+  width: 3px;
+  height: 16px;
+  background-color: #ff6101;
+  vertical-align: middle;
+}
+
+.paraTitle {
+  padding-left: 8px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.paraContent {
+  padding-left: 11px;
+  margin-top: 12px;
+}
+
+.imgListWrapper {
+  text-align: center;
+  padding: 20px 20px 0;
+}
+
+.imgList {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  li {
+    float: left;
+    margin: 0 10px;
+    width: 200px;
+    height: 150px;
+    line-height: 160px;
+    background-color: #f0f2f5;
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.tableTitle {
+  background-color: #efefef;
+  line-height: 50px;
+  padding-left: 58px;
+}
+
+.tradeInfoContent,
+.citeInfoContent,
+.similarityInfoContent {
+  :global {
+    .ant-table-thead > tr > th {
+      background: #fff;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import '~antd/lib/style/themes/default.less';
+
+.mainBox {
+  width: 1200px;
+  margin: 149px auto 0;
+  position: relative;
+}
+
+.box1,
+.box2 {
+  width: 70px;
+  height: 70px;
+  background-image: url('../../assets/images/login/shan.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 40px;
+  right: 616px;
+  div {
+    width: 246px;
+    height: 246px;
+    color: #fefefe;
+    text-align: center;
+    padding-top: 40px;
+    background: url('../../assets/images/login/bg2.png') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 75px;
+    z-index: 999;
+    display: none;
+    p {
+      margin-bottom: 0;
+      margin-top: 12px;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.box2 {
+  top: 408px;
+  right: 705px;
+  div {
+    width: 266px;
+    height: 186px;
+    padding: 30px 20px 0 40px;
+    text-align: left;
+    background: url('../../assets/images/login/bg.png') no-repeat center center;
+  }
+}
+
+.main {
+  width: 480px;
+  background-color: #fff;
+  padding: 48px 75px 111px;
+  border-radius: 30px;
+  margin: 0 0 0 auto;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+
+    .forgetPwd {
+      float: left;
+    }
+
+    .register {
+      float: right;
+      color: #c9151d;
+    }
+  }
+}

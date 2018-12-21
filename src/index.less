@@ -1,0 +1,110 @@
+html,
+body,
+:global(#root) {
+  height: 100%;
+}
+
+:global(.ant-layout) {
+  min-height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// temp fix for https://github.com/ant-design/ant-design/commit/a1fafb5b727b62cb0be29ce6e9eca8f579d4f8b7
+:global {
+  #root {
+    .ant-spin-container {
+      overflow: visible !important;
+    }
+    .global-spin {
+      width: 100%;
+      margin: 40px 0 !important;
+    }
+    .ant-input[type='text'] {
+      height: 40px;
+      background-color: #f3f3fb;
+    }
+    .ant-select-selection--single {
+      height: 40px;
+      background-color: #f3f3fb;
+    }
+    .ant-select-selection__rendered {
+      line-height: 38px;
+    }
+    .ant-calendar-picker-input {
+      background-color: #f3f3fb;
+      height: 40px;
+    }
+    .ant-drawer {
+      .ant-drawer-header {
+        background-color: @primary-color;
+        border-radius: 0;
+      }
+      .ant-drawer-title {
+        color: #fff;
+      }
+      .ant-drawer-close-x {
+        color: #fff;
+      }
+    }
+    .ant-select-selection--multiple {
+      ul {
+        li {
+          height: 32px;
+          line-height: 32px;
+        }
+      }
+      .ant-select-selection__rendered {
+        ul {
+          li {
+            height: 32px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+  .ant-confirm {
+    .ant-modal-body {
+      padding: 40px !important;
+    }
+  }
+  .ant-confirm-body-wrapper {
+    text-align: center;
+    .ant-confirm-body {
+      i {
+        display: none;
+      }
+      .ant-confirm-title {
+        font-size: 20px;
+        color: #333;
+      }
+      .ant-confirm-content {
+        margin-left: 0;
+        font-size: 12px;
+        color: #3b77e3;
+        margin-top: 16px;
+      }
+    }
+    .ant-confirm-btns {
+      float: none !important;
+      margin-top: 30px !important;
+      .ant-btn {
+        width: 110px;
+        height: 40px;
+        border-radius: 4px;
+      }
+      button + button {
+        margin-left: 30px !important;
+      }
+    }
+  }
+}

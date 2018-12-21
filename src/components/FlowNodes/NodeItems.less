@@ -1,0 +1,44 @@
+.itemList {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px 20px 30px;
+  text-align: center;
+  li {
+    float: left;
+    padding: 0 10px;
+    min-width: 80px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 6px;
+    position: relative;
+    margin-bottom: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.item {
+  background-color: @primary-color;
+  .closeBtn {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: @primary-color;
+    line-height: 14px;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.addItem {
+  background-color: #96a2be;
+}

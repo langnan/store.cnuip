@@ -1,0 +1,131 @@
+:global {
+  .ant-tabs-nav-scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #fff;
+    padding: 0 17px;
+  }
+}
+
+.queryForm {
+  margin-top: 20px;
+  background-color: #fff;
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+      border-bottom: 1px solid #ececec;
+    }
+    .ant-form-item-label,
+    .ant-form-item-control {
+      line-height: 50px;
+    }
+    .ant-form-item-control {
+      padding-left: 15px;
+    }
+  }
+}
+
+.queryOption {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 32px;
+}
+
+.optionLabel {
+  margin-right: 15px;
+}
+
+.consultationList {
+  margin: 20px 0;
+}
+
+.consultationItem {
+  padding: 8px;
+}
+
+.consultationContent {
+  background-color: #fff;
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.repliedLabel,
+.unrepliedLabel {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  line-height: 60px;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #c1c1c1;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.repliedLabel {
+  background-color: @primary-color;
+}
+
+.consultationTitle {
+  font-size: 16px;
+  color: #333;
+  margin: 30px 0 10px;
+  text-align: center;
+  font-weight: bold;
+  height: 100px;
+}
+
+.consultationDetail {
+  color: #333;
+  word-break: break-all;
+  height: 74px;
+}
+
+.itemSpliter {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+}
+
+.leftDot,
+.rightDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #f0f2f5;
+  float: left;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.rightDot {
+  float: right;
+  margin-right: -5px;
+}
+
+.centerLine {
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  border-top: 1px dashed #f0f2f5;
+}
+
+.itemMetaData {
+  p {
+    font-size: 12px;
+  }
+  .updateDate {
+    text-align: right;
+    margin-top: 30px;
+  }
+}
